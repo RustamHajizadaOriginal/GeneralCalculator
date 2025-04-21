@@ -1,0 +1,44 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+main {
+  margin: 5vw;
+  padding: 5vw;
+  display: flex;
+  flex-direction: column;
+}
+.screen {
+  margin: 5vw;
+  /* padding: 5vw; */
+}
+
+textarea {
+  height: 20vh;
+  width: 65vw;
+  border-radius: 15px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 5vw;
+  padding: 5vw;
+}
+
+.btns {
+  margin: 2vw;
+  padding: 5vw;
+  background-color: aliceblue;
+  border-radius: 15px;
+  max-width: 10vw;
+  max-height: 10vh;
+  text-align: center;
+}
+
+.btns:hover {
+  background-color: antiquewhite;
+  cursor: pointer;
+}
