@@ -5,15 +5,19 @@ const btn1 = document.getElementById("btn1");
 
 // append to display
 const appendToDisplay = (input) => {
-    screen.value += input;
+  screen.value += input;
 };
 
 // for clearing display
-const clearDisplay = () = {
-    screen.value = "";
-}
+const clearDisplay = () => {
+  screen.value = "";
+};
 
-// to claculate 
+// to claculate
 const calculate = () => {
-    
-}
+  try {
+    screen.value = eval(screen.value);
+  } catch (error) {
+    screen.value = "Error";
+  }
+};
