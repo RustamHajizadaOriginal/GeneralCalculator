@@ -7,28 +7,28 @@
     <title>Calculator</title>
   </head>
   <body>
-    <main>
-      <div class="screen" id="screen">
-        <textarea name="monitor" id=""></textarea>
+    <div id="calculator">
+      <input id="display" readonly />
+      <div id="keys">
+        <button class="mainbtn" onclick="appendToDisplay('+') ">+</button>
+        <button onclick="appendToDisplay('7') ">7</button>
+        <button onclick="appendToDisplay('8') ">8</button>
+        <button onclick="appendToDisplay('9') ">9</button>
+        <button class="mainbtn" onclick="appendToDisplay('-') ">-</button>
+        <button onclick="appendToDisplay('4') ">4</button>
+        <button onclick="appendToDisplay('5') ">5</button>
+        <button onclick="appendToDisplay('6') ">6</button>
+        <button class="mainbtn" onclick="appendToDisplay('*') ">*</button>
+        <button onclick="appendToDisplay('1') ">1</button>
+        <button onclick="appendToDisplay('2') ">2</button>
+        <button onclick="appendToDisplay('3') ">3</button>
+        <button class="mainbtn" onclick="appendToDisplay('/') ">/</button>
+        <button onclick="appendToDisplay('0') ">0</button>
+        <button onclick="appendToDisplay('.') ">.</button>
+        <button class="mainbtn" onclick="calculate()">=</button>
       </div>
-      <div class="buttons">
-        <div class="btns btn1" id="btn1">1</div>
-        <div class="btns btn2" id="btn2">2</div>
-        <div class="btns btn3" id="btn3">3</div>
-        <div class="btns btn4" id="btn4">4</div>
-        <div class="btns btn5" id="btn5">5</div>
-        <div class="btns btn6" id="btn6">6</div>
-        <div class="btns btn7" id="btn7">7</div>
-        <div class="btns btn8" id="btn8">8</div>
-        <div class="btns btn9" id="btn9">9</div>
-        <div class="btns btn0" id="btn0">0</div>
-        <div class="btns btn1" id="btn/">/</div>
-        <div class="btns btn1" id="btn*">*</div>
-        <div class="btns btn1" id="btn+">+</div>
-        <div class="btns btn1" id="btn-">-</div>
-        <div class="btns btn1" id="btn=">=</div>
-      </div>
-    </main>
+      <button class="clearbtn" onclick="clearDisplay()">C</button>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

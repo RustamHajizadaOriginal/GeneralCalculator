@@ -1,10 +1,86 @@
+:root {
+  --button-color: hsl(3, 3%, 35%);
+  --mainbtn-color: hsl(39, 100%, 50%);
+  --clearbtn-color: hsl(0, 70%, 50%);
+  --button-hover-color: hsl(3, 3%, 50%);
+  --button-active-color: hsl(3, 3%, 75%);
+  --button-text-color: white;
+  --calculator-bg-color: hsl(0, 0%, 15%);
+  --display-bg-color: hsl(0, 0%, 25%);
+  --general-bg-color: hsl(0, 0%, 85%);
+}
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--general-bg-color);
+}
+#calculator {
+  font-family: cursive;
+  background-color: var(--calculator-bg-color);
+  border-radius: 15px;
+  overflow: hidden;
+}
+#display {
+  width: 100%;
+  padding: 5vw;
+  font-size: 5rem;
+  text-align: left;
+  border: none;
+  background-color: var(--display-bg-color);
+  color: var(--button-text-color);
+}
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  margin: 3vw;
+  padding: 3vw;
+}
+button {
+  width: 18vw;
+  height: 12vh;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  font-size: 3rem;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--button-hover-color);
+}
+button:active {
+  background-color: var(--button-active-color);
+}
+.mainbtn {
+  background-color: var(--mainbtn-color);
+  font-size: 5rem;
+}
+.clearbtn {
+  margin: 15px;
+  padding: 5px;
+  height: 13vh;
+  width: 95vw;
+  border-radius: 50px;
+  background-color: var(--clearbtn-color);
+  font-size: 600;
+}
+.clearbtn:hover {
+  background-color: var(--mainbtn-color);
+}
+.clearbtn:active {
+  background-color: var(--button-active-color);
+}
 /* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 } */
 
-main {
+/* main {
   margin: 5vw;
   padding: 5vw;
   display: flex;
@@ -13,8 +89,8 @@ main {
 .screen {
   margin: 5vw;
   /* padding: 5vw; */
-}
 
+/* 
 textarea {
   height: 20vh;
   width: 65vw;
@@ -41,4 +117,4 @@ textarea {
 .btns:hover {
   background-color: antiquewhite;
   cursor: pointer;
-}
+} */
