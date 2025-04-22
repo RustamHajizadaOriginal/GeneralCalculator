@@ -6,7 +6,7 @@ const appendToDisplay = (input) => {
   display.value += input;
 };
 
-// for clearing display
+// Clearing display
 const clearDisplay = () => {
   display.value = "";
 };
