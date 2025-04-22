@@ -11,7 +11,7 @@ const clearDisplay = () => {
   display.value = "";
 };
 
-// to claculate
+// Calculate result
 const calculate = () => {
   try {
     display.value = eval(display.value);
