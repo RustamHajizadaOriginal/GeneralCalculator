@@ -12,8 +12,9 @@ const clearDisplay = () => {
 };
 
 // Calculate result
-const calculate = () => {
-  try {
+const calcula
+// validate input first 
+const expression = display.value;
     display.value = eval(display.value);
   } catch (error) {
     display.value = "Error!";
