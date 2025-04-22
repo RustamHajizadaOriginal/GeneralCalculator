@@ -44,13 +44,13 @@ body {
   text-align: center;
 }
 button {
-  width: 18vw;
-  height: 12vh;
+  width: 100%;
+  aspect-ratio: 1/1;
   border-radius: 50%;
   border: none;
   background-color: var(--button-color);
   color: var(--button-text-color);
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
   cursor: pointer;
   text-align: center;
 }
@@ -62,16 +62,17 @@ button:active {
 }
 .mainbtn {
   background-color: var(--mainbtn-color);
-  font-size: 5rem;
+  font-size: clamp(2rem, 4vw, 3rem);
 }
 .clearbtn {
-  margin: 15px;
-  padding: 5px;
-  height: 13vh;
-  width: 95vw;
+  grid-column: 1/-1;
+  margin: 5px 0;
+  height: auto;
+  padding: 35px;
   border-radius: 50px;
   background-color: var(--clearbtn-color);
   font-size: 600;
+  aspect-ratio: auto;
 }
 .clearbtn:hover {
   background-color: var(--mainbtn-color);
