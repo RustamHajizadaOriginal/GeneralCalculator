@@ -17,6 +17,13 @@ const calculate = () => {
 
         // validate input first 
         const expression = display.value;
+
+        // Alternative to eval 
+        const result = Function('"use strinct"; return(' + expression + ')')();
+
+
+
+
     }
 }
 
