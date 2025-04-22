@@ -50,7 +50,7 @@ button {
   border: none;
   background-color: var(--button-color);
   color: var(--button-text-color);
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-size: clamp(1.5rem, 3vw, 2.5rem); /* Responsive font size */
   cursor: pointer;
   text-align: center;
 }
