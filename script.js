@@ -1,9 +1,7 @@
 //Calculator program
-
 const display = document.getElementById("display");
-const btn1 = document.getElementById("btn1");
 
-// append to display
+// Append to display
 const appendToDisplay = (input) => {
   display.value += input;
 };
