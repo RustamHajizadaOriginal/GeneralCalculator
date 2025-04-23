@@ -13,25 +13,18 @@ const clearDisplay = () => {
 
 // Calculate result
 const calculate = () => {
-    try {
+  try {
+    // validate input first
+    const expression = display.value;
 
-        // validate input first 
-        const expression = display.value;
-
-        // Alternative to eval 
-        const result = Function('"use strinct"; return(' + expression + ')')();
-        // check if reesult is valid 
-        if (isFinite(result)) {
-            display.value = result;
-        } else {
-            display.value = "Error!:Invalid calculation!";
-        }
-    } catch (error) {
-        display.value = "Error!";
+    // Alternative to eval
+    const result = Function('"use strinct"; return(' + expression + ")")();
+    // check if reesult is valid
+    if (isFinite(result)) {
+      display.value = result;
+    } else {
+      display.value = "Error!:Invalid calculation!";
     }
-}
-
-    display.value = eval(display.value);
   } catch (error) {
     display.value = "Error!";
   }
