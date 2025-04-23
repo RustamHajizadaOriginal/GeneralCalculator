@@ -26,9 +26,8 @@ const calculate = () => {
         } else {
             display.value = "Error!:Invalid calculation!";
         }
-
-
-
+    } catch (error) {
+        display.value = "Error!";
     }
 }
 
