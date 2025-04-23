@@ -20,7 +20,12 @@ const calculate = () => {
 
         // Alternative to eval 
         const result = Function('"use strinct"; return(' + expression + ')')();
-
+        // check if reesult is valid 
+        if (isFinite(result)) {
+            display.value = result;
+        } else {
+            display.value = "Error!:Invalid calculation!";
+        }
 
 
 
